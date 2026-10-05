@@ -1,0 +1,19 @@
+# .github/workflows/excavator.yml
+name: Excavator
+on:
+  schedule:
+  - cron: '20 */4 * * *' # Runs every 4 hours
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          SKIP_UPDATED: 1

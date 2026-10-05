@@ -1,0 +1,35 @@
+{
+    "version": "6.3.2",
+    "description": "QQ 聊天记录与表情包导出工具，Framework 模式（与桌面端 QQ 共用登录状态）",
+    "homepage": "https://github.com/shuakami/qq-chat-exporter",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "需要本机已安装 QQNT（https://im.qq.com/），并且启动前要完全退出正在运行的 QQ。",
+        "启动后访问 http://localhost:40653/qce，访问令牌在 %USERPROFILE%\\.qq-chat-exporter\\security.json 的 accessToken 字段。",
+        "与 qq-chat-exporter（Shell 模式）共用 40653 端口，两者不要同时运行。"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shuakami/qq-chat-exporter/releases/download/v6.3.2/NapCat-Framework-QCE-v6.3.2.zip",
+            "hash": "eb0c2af40fc5a4a063ec2df7f8fa343d325894582d0aaa3c98ca7361418810ae"
+        }
+    },
+    "bin": [
+        [
+            "napiLoader.bat",
+            "qq-chat-exporter-framework"
+        ]
+    ],
+    "persist": [
+        "config",
+        "logs"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shuakami/qq-chat-exporter/releases/download/v$version/NapCat-Framework-QCE-v$version.zip"
+            }
+        }
+    }
+}

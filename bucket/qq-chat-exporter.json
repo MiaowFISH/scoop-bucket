@@ -1,0 +1,36 @@
+{
+    "version": "6.3.2",
+    "description": "QQ 聊天记录与表情包导出工具，支持 HTML/JSON/TXT/Excel 导出和定时备份",
+    "homepage": "https://github.com/shuakami/qq-chat-exporter",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "导出新记录需要本机已安装 QQNT（https://im.qq.com/）；没有 QQ 时只能用独立模式浏览已导出的文件。",
+        "启动后访问 http://localhost:40653/qce 使用 Web 界面，完整模式需要控制台打印的访问令牌。"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shuakami/qq-chat-exporter/releases/download/v6.3.2/NapCat-QCE-Windows-x64-v6.3.2.zip",
+            "hash": "3fc093ba2332b97ac17e16160d5baa6ffe0a8def6c394d515a94777fe0ca492c"
+        }
+    },
+    "extract_dir": "NapCat-QCE-Windows-x64",
+    "bin": [
+        [
+            "launcher-user.bat",
+            "qq-chat-exporter"
+        ]
+    ],
+    "persist": [
+        "config",
+        "logs",
+        "qqnt.json"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shuakami/qq-chat-exporter/releases/download/v$version/NapCat-QCE-Windows-x64-v$version.zip"
+            }
+        }
+    }
+}
