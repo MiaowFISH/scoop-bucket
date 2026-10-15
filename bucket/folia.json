@@ -1,12 +1,12 @@
 {
-    "version": "0.7.19",
+    "version": "0.7.20",
     "description": "以全屏沉浸式歌词播放为核心的在线音乐播放器，支持网易云、酷狗、Navidrome 和本地音乐库",
     "homepage": "https://github.com/chthollyphile/folia-major",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chthollyphile/folia-major/releases/download/v0.7.19/Folia-Setup-0.7.19.exe#/dl.7z",
-            "hash": "46e6b38da367d0a494db71189c86cecde38813fb73251131ae46debc64c328c3",
+            "url": "https://github.com/chthollyphile/folia-major/releases/download/v0.7.20/Folia-Setup-0.7.20.exe#/dl.7z",
+            "hash": "8e5de6814ce4f5498befbbf74e82bf943de71d76082aaa03fb0074a719002e37",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item -Recurse -Force \"$dir\\`$*\", \"$dir\\Uninstall*\""
