@@ -1,5 +1,5 @@
 {
-    "version": "6.4.2",
+    "version": "6.4.3",
     "description": "QQ 聊天记录与表情包导出工具，Framework 模式（与桌面端 QQ 共用登录状态）",
     "homepage": "https://github.com/shuakami/qq-chat-exporter",
     "license": "GPL-3.0-only",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shuakami/qq-chat-exporter/releases/download/v6.4.2/NapCat-Framework-QCE-v6.4.2.zip",
-            "hash": "605ae4406ee0f2233e368f8b00a7b4424ff52779b750bc2cd69fdaffa902883a"
+            "url": "https://github.com/shuakami/qq-chat-exporter/releases/download/v6.4.3/NapCat-Framework-QCE-v6.4.3.zip",
+            "hash": "a455f6420f78b3fc141625d6d82b84aeabc0377c4b528b34f848cdb44cecca78"
         }
     },
     "bin": [
